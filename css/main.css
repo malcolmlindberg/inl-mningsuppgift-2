@@ -20,7 +20,16 @@ nav .nav-list .nav-item {
 }
 nav .nav-list .nav-item a {
   color: white;
+}
+
+ul > li > a {
   text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+a:hover {
+  text-decoration: underline white;
 }
 
 .heroimage {
@@ -30,7 +39,7 @@ nav .nav-list .nav-item a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(assets/negative-space-black-forest-dawn.jpg);
+  background-image: url(negative-space-black-forest-dawn.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -41,6 +50,7 @@ nav .nav-list .nav-item a {
 }
 .heroimage .fas {
   font-size: 1.5rem;
+  color: white;
 }
 
 .container {
@@ -69,12 +79,13 @@ nav .nav-list .nav-item a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
-  width: 300px;
+  height: 20vh;
+  width: 60vw;
   border-radius: 5px;
   padding: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.055), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #text a {
   display: flex;
@@ -105,6 +116,7 @@ h3 {
   display: flex;
   justify-content: center;
   font-size: 1.5rem;
+  color: black;
 }
 
 footer {
@@ -155,12 +167,15 @@ footer .bottom .fa {
     column-gap: 200px;
   }
   .container .row .rakib, .container .row .alexandra, .container .row .lasse, .container .row .sebastian, .container .row2 .rakib, .container .row2 .alexandra, .container .row2 .lasse, .container .row2 .sebastian {
-    width: 400px;
-    height: 100%;
+    width: 30vw;
+    height: auto;
   }
-
-  .text {
-    width: 30%;
+  .container .row .rakib .text, .container .row .alexandra .text, .container .row .lasse .text, .container .row .sebastian .text, .container .row2 .rakib .text, .container .row2 .alexandra .text, .container .row2 .lasse .text, .container .row2 .sebastian .text {
+    width: 30vw;
+    height: 200px;
+  }
+  .container #text {
+    width: 30vw;
   }
 
   h3 {

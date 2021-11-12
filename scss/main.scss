@@ -16,11 +16,19 @@ nav{
             margin-right: 2rem ;
             a{
                 color: white;
-                text-decoration: none;
             }
         }
     }
 }
+ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+a:hover {
+  text-decoration: underline white;
+}
+
 
 .heroimage{
     width: 100%;
@@ -29,7 +37,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(assets/negative-space-black-forest-dawn.jpg);
+    background-image: url(negative-space-black-forest-dawn.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -39,6 +47,7 @@ nav{
     text-align: center;
     .fas{
         font-size: 1.5rem;
+        color: white;
     }
     
 }
@@ -61,6 +70,8 @@ nav{
         border-radius: 50%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
 }
+
+
 #text {
     margin-left: auto;
     margin-right: auto;
@@ -68,12 +79,14 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    width: 300px;
+    height: 20vh;
+    width: 60vw;
     border-radius: 5px;
     padding: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.055), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+
     a{
         display: flex;
         justify-content: center;
@@ -103,6 +116,7 @@ h3{
         display: flex;
         justify-content: center;
         font-size: 1.5rem;
+        color:black;
     }
 }
 
@@ -155,14 +169,20 @@ footer{
         row-gap: 10px;
         column-gap: 200px;    
         .rakib, .alexandra, .lasse, .sebastian{
-            width: 400px;
-            height: 100%;
+            width: 30vw;
+            height: auto;
+            .text{
+                width: 30vw;
+                height:200px;
         }
     }
     
 }
-.text{
-    width: 30%;
+
+#text{
+    width: 30vw;
+}
+
 }
 h3{
     display: flex;
